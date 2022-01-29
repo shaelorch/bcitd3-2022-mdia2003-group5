@@ -31,7 +31,6 @@ h1, h2, h3 {
 .hamburger {
   width:2rem;
   height:2rem;
-  margin-top: 0px;
   float:right;
   position: relative;
 }
@@ -44,8 +43,47 @@ h1, h2, h3 {
   padding: 2rem;
   width: 7rem;
   height: 7rem;
+  color: white;
 }
-
+#homeicon, #pageicon, #porticon, #home2icon, #blogicon {
+  padding: 1rem;
+}
+.box1 {
+  width:7rem;
+  margin: auto;
+  height:7rem;
+  padding:2.7rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.box2 {
+  width:7rem;
+  margin: auto;
+  height:7rem;
+  padding:2.7rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.box3 {
+  width:7rem;
+  margin: auto;
+  height:7rem;
+  padding:2.7rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.box4 {
+  width:7rem;
+  margin: auto;
+  height:7rem;
+  padding:2.7rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
 * {
   box-sizing: border-box;
 }
@@ -247,4 +285,34 @@ nav {
 .hamburger {
   background-color: #166ba2;
 }
+.box1 {
+ font-size: xx-large;
+ border: 3px solid #ffb901;
+
+}
+.box2 {
+  font-size: xx-large;
+  border: 3px solid #25c389;
+}
+.box3 {
+  font-size: xx-large;
+  border: 3px solid #de6262;
+}
+.box4 {
+  font-size: xx-large;
+  border: 3px solid #1691bd;
+}
+#lightbulb {
+  color: #ffb901;
+}
+#photograph {
+  color: #25c389;
+}
+#gears {
+  color: #de6262;
+}
+#pencil {
+  color: #1691bd;
+}
+
 

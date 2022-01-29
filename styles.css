@@ -16,17 +16,29 @@ h1, h2, h3 {
   text-align: center;
 }
 .title {
+  width:10rem;
   display: flex;
   padding-right: 2rem;
 }
 .ask {
   text-align: center;
 }
-
 .navcontainer {
   display: flex;
   padding: 2rem;
   position: sticky;
+}
+.hamburger {
+  width:2rem;
+  height:2rem;
+  margin-top: 0px;
+  float:right;
+  position: relative;
+}
+#menuicon {
+  color: white;
+  font-size: x-large;
+  padding: 5px;
 }
 .home, .pages, .blog, .portfolio, .home2 {
   padding: 2rem;
@@ -102,7 +114,9 @@ nav {
 
 @media screen and (min-width: 40em) {
   /* main menu */
-  
+  .hamburger {
+    display: none;
+  }
   .main-nav {
     display: flex;
     flex-direction: row;
@@ -230,5 +244,7 @@ nav {
 .home2 {
   background-color: #166ba2;
 }
-
+.hamburger {
+  background-color: #166ba2;
+}
 

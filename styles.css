@@ -12,8 +12,26 @@ html {
    LAYOUT
    ========================================================================== */
 
-.headings {
+h1, h2, h3 {
   text-align: center;
+}
+.title {
+  display: flex;
+  padding-right: 2rem;
+}
+.ask {
+  text-align: center;
+}
+
+.navcontainer {
+  display: flex;
+  padding: 2rem;
+  position: sticky;
+}
+.home, .pages, .blog, .portfolio, .home2 {
+  padding: 2rem;
+  width: 7rem;
+  height: 7rem;
 }
 
 * {
@@ -73,15 +91,18 @@ nav {
 /* Small only */
 
 @media screen and (max-width: 39.9375em) {
-  .s-hidden {
+  .navcontainer {
     display: none !important;
   }
+
+  
 }
 
 /* Medium and up */
 
 @media screen and (min-width: 40em) {
   /* main menu */
+  
   .main-nav {
     display: flex;
     flex-direction: row;
@@ -193,3 +214,21 @@ nav {
 .page__header {
   background-color: #ccc;
 }
+
+.home {
+  background-color: #25c389;
+}
+.pages {
+  background-color: #ffb901;
+}
+.blog {
+  background-color: #de6262;
+}
+.portfolio {
+  background-color: #1691bd;
+}
+.home2 {
+  background-color: #166ba2;
+}
+
+

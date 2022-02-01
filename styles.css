@@ -96,8 +96,21 @@ h3 {
 .cta {
   display: block;
   position: relative;
-  margin-left: 10rem;
-
+ 
+}
+#metrolics {
+  color:#1691bd;
+}
+.minions {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.ctabuttons{
+  position: absolute;
+  top: 7rem;
+  float: left;
+  left: 7rem;
 }
 /*====================================================================
   MIDDLE CONTENT
@@ -111,25 +124,18 @@ h3 {
 
 }
 
-.parent2 {
+.grid-container1 {
   display: grid;
-  grid-template-columns: repeat(4, 20rem);
-  grid-template-rows: auto;
-  justify-items: center;
-  
-  
-}
-
-.websol {
-  
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
   
 }
-
-.whatsup {
-  
+p {
+  text-align: center;
 }
-
-
 
 * {
   box-sizing: border-box;
@@ -139,7 +145,7 @@ div,
 section,
 main,
 nav {
-  outline: 1px solid #ccc;
+  
 }
 
 .grid-container {
@@ -247,6 +253,23 @@ nav {
   .cta {
     display: none;
   }
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .content {
+    text-align: start;
+    margin-left: 8rem;
+  }
+  .box1, .box2, .box3, .box4 {
+    float: left;
+    margin-top: 1rem;
+  }
+
 }
 
 /* Medium and up */

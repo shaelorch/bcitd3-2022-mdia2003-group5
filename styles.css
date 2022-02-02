@@ -33,7 +33,6 @@ h3 {
 #cubeicon {
   padding: 1rem;
   color: #de6262;
-
 }
 .ask {
   text-align: center;
@@ -47,8 +46,7 @@ h3 {
   width: 2rem;
   height: 2rem;
   position: fixed;
-  right:2rem;
-
+  right: 2rem;
 }
 #menuicon {
   color: white;
@@ -73,7 +71,7 @@ h3 {
   padding: 1rem;
 }
 .metro {
-  border-left:5px solid #166ba2;
+  border-left: 5px solid #166ba2;
   width: 7rem;
   height: 2rem;
   background-color: white;
@@ -88,25 +86,24 @@ h3 {
 }
 .respon {
   border-left: 5px solid #ffb901;
-  width:11rem;
-  height:2rem;
+  width: 11rem;
+  height: 2rem;
   background-color: white;
   opacity: 75%;
 }
 .cta {
   display: block;
   position: relative;
- 
 }
 #metrolics {
-  color:#1691bd;
+  color: #1691bd;
 }
 .minions {
   height: 100%;
   width: 100%;
   display: flex;
 }
-.ctabuttons{
+.ctabuttons {
   position: absolute;
   top: 7rem;
   float: left;
@@ -116,12 +113,14 @@ h3 {
   MIDDLE CONTENT
   ====================================================================*/
 
-.box1, .box2, .box3, .box4 {
+.box1,
+.box2,
+.box3,
+.box4 {
   width: 7rem;
   margin: auto;
   height: 7rem;
   padding: 2.7rem;
-
 }
 
 .grid-container1 {
@@ -130,8 +129,6 @@ h3 {
   grid-auto-flow: row;
   gap: 2rem;
   justify-content: center;
-  
-  
 }
 
 p {
@@ -150,7 +147,6 @@ figcaption {
   text-align: center;
 }
 
-
 * {
   box-sizing: border-box;
 }
@@ -159,7 +155,6 @@ div,
 section,
 main,
 nav {
-  
 }
 
 .grid-container {
@@ -280,11 +275,13 @@ nav {
     text-align: start;
     margin-left: 8rem;
   }
-  .box1, .box2, .box3, .box4 {
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
     float: left;
     margin-top: 1rem;
   }
-
 }
 
 /* Medium and up */
@@ -329,7 +326,6 @@ nav {
   .m-span-6 {
     grid-column-end: span 6;
   }
-  
 }
 
 /* Medium only */

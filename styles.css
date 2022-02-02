@@ -1,0 +1,478 @@
+/* ============================================
+BASE STYLES
+============================================ */
+
+html {
+  /* font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   LAYOUT
+   ========================================================================== */
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+/* ============================================================
+  Navbar
+  ============================================================= */
+.title {
+  width: 10rem;
+  display: flex;
+  padding-right: 2rem;
+}
+.titleicon {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+#cubeicon {
+  padding: 1rem;
+  color: #de6262;
+}
+.ask {
+  text-align: center;
+}
+.navcontainer {
+  display: flex;
+  padding: 2rem;
+  position: sticky;
+}
+.hamburger {
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  right: 2rem;
+}
+#menuicon {
+  color: white;
+  font-size: x-large;
+  padding: 5px;
+}
+.home,
+.pages,
+.blog,
+.portfolio,
+.home2 {
+  padding: 2rem;
+  width: 3rem;
+  height: 3rem;
+  color: white;
+}
+#homeicon,
+#pageicon,
+#porticon,
+#home2icon,
+#blogicon {
+  padding: 1rem;
+}
+.metro {
+  border-left: 5px solid #166ba2;
+  width: 7rem;
+  height: 2rem;
+  background-color: white;
+  opacity: 75%;
+}
+.retina {
+  border-left: 5px solid #de6262;
+  width: 9rem;
+  height: 2rem;
+  background-color: white;
+  opacity: 75%;
+}
+.respon {
+  border-left: 5px solid #ffb901;
+  width: 11rem;
+  height: 2rem;
+  background-color: white;
+  opacity: 75%;
+}
+.cta {
+  display: block;
+  position: relative;
+}
+#metrolics {
+  color: #1691bd;
+}
+.minions {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.ctabuttons {
+  position: absolute;
+  top: 7rem;
+  float: left;
+  left: 7rem;
+}
+/*====================================================================
+  MIDDLE CONTENT
+  ====================================================================*/
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  width: 2rem;
+  margin: auto;
+  height: 2rem;
+  padding: 2.7rem;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  gap: 2rem;
+  justify-content: center;
+}
+
+p {
+  text-align: center;
+}
+.pics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-row-gap: 0px;
+}
+figcaption {
+  background-color: #1691bd;
+  color: white;
+  height: 3rem;
+  text-align: center;
+  width: 92%;
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+
+/* div,
+section,
+main,
+nav {
+} */
+
+.grid-container {
+  display: grid;
+  margin: 0 auto;
+  max-width: 85rem;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.headings > p {
+  text-align: center;
+  align-items: center;
+}
+
+.projectimages > .parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  justify-items: center;
+}
+
+.cont4 > .parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+}
+
+.logos > .parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+}
+
+.contpeewee > .parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.peeweeHerman > img {
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 75px;
+  max-height: 75px;
+}
+
+.peeweeHerman > p {
+  text-align: left;
+}
+
+.footer > .parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.abouticons > .parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+}
+
+.footerCont2 > .parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  justify-items: center;
+}
+
+.emailButton {
+  background-color: orangered;
+  color: white;
+  text-align: left;
+  border: none;
+  text-decoration: none;
+  padding: 16px 33px;
+  width: 100%;
+}
+
+/* breakpoints */
+
+/* Small only */
+
+@media screen and (max-width: 39.9375em) {
+  .navcontainer {
+    display: none !important;
+  }
+
+  .cta {
+    display: none;
+  }
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .content {
+    text-align: start;
+    margin-left: 8rem;
+  }
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    float: left;
+    margin-top: 1rem;
+    width:1rem;
+    height: 1rem;
+    line-height: 1rem;
+    
+  }
+
+  .pics {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 0px;
+
+  }
+  .whatsup > .content {
+   justify-content: center;
+   align-self: center;
+  }
+  figcaption {
+    background-color: #1691bd;
+    color: white;
+    height: 3rem;
+    text-align: center;
+    width: 75%;
+  }
+}
+
+/* Medium and up */
+
+@media screen and (min-width: 40em) {
+  /* main menu */
+  .hamburger {
+    display: none;
+  }
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+  .m-2-col {
+    grid-template-columns: 1fr 1fr;
+  }
+  .m-3-col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .m-4-col {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .m-5-col {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .m-6-col {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .m-span-2 {
+    grid-column-end: span 2;
+  }
+  .m-span-3 {
+    grid-column-end: span 3;
+  }
+  .m-span-4 {
+    grid-column-end: span 4;
+  }
+  .m-span-5 {
+    grid-column-end: span 5;
+  }
+  .m-span-6 {
+    grid-column-end: span 6;
+  }
+}
+
+/* Medium only */
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .m-hidden {
+    display: none !important;
+  }
+}
+
+/* Large and up */
+
+@media screen and (min-width: 64em) {
+  .l-2-col {
+    grid-template-columns: 1fr 1fr;
+  }
+  .l-3-col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .l-4-col {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .l-5-col {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .l-6-col {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .l-8-col {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .l-span-2 {
+    grid-column-end: span 2;
+  }
+  .l-span-3 {
+    grid-column-end: span 3;
+  }
+  .l-span-4 {
+    grid-column-end: span 4;
+  }
+  .l-span-5 {
+    grid-column-end: span 5;
+  }
+  .l-span-6 {
+    grid-column-end: span 6;
+  }
+  .l-span-7 {
+    grid-column-end: span 7;
+  }
+  .l-span-8 {
+    grid-column-end: span 8;
+  }
+  .l-start-2 {
+    grid-column-start: 2;
+  }
+}
+
+/* Large only */
+
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+  .l-hidden {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   MODULES
+   ========================================================================== */
+
+/* ==========================================================================
+   THEME
+   ========================================================================== */
+
+.page__header {
+  background-color: #ccc;
+}
+
+.home {
+  background-color: #25c389;
+}
+.pages {
+  background-color: #ffb901;
+}
+.blog {
+  background-color: #de6262;
+}
+.portfolio {
+  background-color: #1691bd;
+}
+.home2 {
+  background-color: #166ba2;
+}
+.hamburger {
+  background-color: #166ba2;
+}
+.box1 {
+  font-size: xx-large;
+  border: 3px solid #ffb901;
+}
+.box2 {
+  font-size: xx-large;
+  border: 3px solid #25c389;
+}
+.box3 {
+  font-size: xx-large;
+  border: 3px solid #de6262;
+}
+.box4 {
+  font-size: xx-large;
+  border: 3px solid #1691bd;
+}
+#lightbulb {
+  color: #ffb901;
+}
+#photograph {
+  color: #25c389;
+}
+#gears {
+  color: #de6262;
+}
+#pencil {
+  color: #1691bd;
+}
